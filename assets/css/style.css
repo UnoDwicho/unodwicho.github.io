@@ -41,8 +41,10 @@ h6{font-size: 1.2rem;}
 .wrap{
     max-width: 1024px;
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 1rem 50px;
 }
+
+.separateur{margin: 2rem 0;}
 
 h1, h2{text-align: center;}
 h1{margin: 4.5rem 0;}
@@ -74,11 +76,28 @@ h3{margin-bottom: 1.5rem;}
     margin-top: .5rem;
     display: none;
 }
-#sat-ign:checked ~ .map-sat-ign{display: initial;}
-#osm:checked ~ .map-osm{display: initial;}
-#osm-rando:checked ~ .map-osm-rando{display: initial;}
+
+#bouillousessat-ign:checked ~ .map-sat-ign{display: initial;}
+#bouillousesosm:checked ~ .map-osm{display: initial;}
+#bouillousesosm-rando:checked ~ .map-osm-rando{display: initial;}
+
+#canabatoussat-ign:checked ~ .map-sat-ign{display: initial;}
+#canabatousosm:checked ~ .map-osm{display: initial;}
+#canabatousosm-rando:checked ~ .map-osm-rando{display: initial;}
+
+#ayoussat-ign:checked ~ .map-sat-ign{display: initial;}
+#ayousosm:checked ~ .map-osm{display: initial;}
+#ayousosm-rando:checked ~ .map-osm-rando{display: initial;}
+
+#artaxsat-ign:checked ~ .map-sat-ign{display: initial;}
+#artaxosm:checked ~ .map-osm{display: initial;}
+#artaxosm-rando:checked ~ .map-osm-rando{display: initial;}
+
+
 
 .section-infos{
     padding-top: 2rem;
 }
+.liste-infos{padding-left:1.5rem;}
+.liste-infos li{margin-bottom: .5rem;}
 .lien-visorando{display:block; margin-top:1rem;}

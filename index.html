@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:500|Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
 </head>
-<body><div class="wrap">
+<body><div class="wrap" id="test">
     <h1>Spots de rando</h1>
-    <section class="section-pyreness">
+    <section class="section-pyreness section-region">
         <h2>Pyrénées</h2>
-        <div class="rando-unit">
+        <div class="rando-unit sectionbouillouses"><!-- BOUILLOUSES -->
             <p class="section-map">
-                <input type="radio" name="bouillouse" id="sat-ign" checked>
-                <label for="sat-ign">Satellite IGN</label>
-                <input type="radio" name="bouillouse" id="osm">
-                <label for="osm">OSM</label>
-                <input type="radio" name="bouillouse" id="osm-rando">
-                <label for="osm-rando">OSM rando</label><br>
+                <input type="radio" name="bouillouses" id="bouillousessat-ign" checked>
+                <label for="bouillousessat-ign">Satellite IGN</label>
+                <input type="radio" name="bouillouses" id="bouillousesosm">
+                <label for="bouillousesosm">OSM</label>
+                <input type="radio" name="bouillouses" id="bouillousesosm-rando">
+                <label for="bouillousesosm-rando">OSM rando</label><br>
 
                 <img class="map map-osm" src="assets/img/bouillouses/osm.jpg" alt="">
                 <img class="map map-osm-rando" src="assets/img/bouillouses/osm-rando.jpg" alt="">
@@ -27,15 +27,86 @@
             </p>
             <div class="section-infos">
                 <h3>Les Bouillouses</h3>
-                <p>
-                    3h15 de route depuis Montpellier.<br>
-                    Entre 2 et 3h de marche pour faire la boucle tranquillement.<br>
-                    La boucle est presque tout le temps à environ 2000m d'altitude.
-                </p>
+                <ul class="liste-infos">
+                    <li>3h15 de route depuis Montpellier</li>
+                    <li>Entre 2 et 3h de marche pour faire la boucle tranquillement</li>
+                    <li>La boucle est presque tout le temps à environ 2000m d'altitude</li>
+                </ul>
                 <a class="lien-visorando" href="https://www.visorando.fr/randonnee-les-bouillouses-lacs-d-en-bas/">Liens visorando</a>
             </div>
         </div>
-        
+        <hr class="separateur"> <!-- SÉPARATEUR -->
+        <div class="rando-unit sectioncanabatous"><!-- CANABATOUS -->
+            <p class="section-map">
+                <input type="radio" name="canabatous" id="canabatoussat-ign" checked>
+                <label for="canabatoussat-ign">Satellite IGN</label>
+                <input type="radio" name="canabatous" id="canabatousosm">
+                <label for="canabatousosm">OSM</label>
+                <input type="radio" name="canabatous" id="canabatousosm-rando">
+                <label for="canabatousosm-rando">OSM rando</label><br>
+
+                <img class="map map-osm" src="assets/img/canabatous/osm.jpg" alt="">
+                <img class="map map-osm-rando" src="assets/img/canabatous/osm-rando.jpg" alt="">
+                <img class="map map-sat-ign" src="assets/img/canabatous/sat-ign.jpg" alt="">
+            </p>
+            <div class="section-infos">
+                <h3>Pic de Canabatous<br>Étang d'Alate</h3>
+                <ul class="liste-infos">
+                    <li>3h40 de route depuis Montpellier</li>
+                    <li>Entre 4 et 5h de marche pour faire la boucle</li>
+                    <li>La boucle commence à 1400m et culmine à 2030m d'altitude</li>
+                </ul>
+                <a class="lien-visorando" href="https://www.visorando.fr/randonnee-pic-de-canabatous-etang-d-alate/">Liens visorando</a>
+            </div>
+        </div>
+        <hr class="separateur"> <!-- SÉPARATEUR -->
+        <div class="rando-unit sectionayous"><!-- AYOUS -->
+            <p class="section-map">
+                <input type="radio" name="ayous" id="ayoussat-ign" checked>
+                <label for="ayoussat-ign">Satellite IGN</label>
+                <input type="radio" name="ayous" id="ayousosm">
+                <label for="ayousosm">OSM</label>
+                <input type="radio" name="ayous" id="ayousosm-rando">
+                <label for="ayousosm-rando">OSM rando</label><br>
+
+                <img class="map map-osm" src="assets/img/ayous/osm.jpg" alt="">
+                <img class="map map-osm-rando" src="assets/img/ayous/osm-rando.jpg" alt="">
+                <img class="map map-sat-ign" src="assets/img/ayous/sat-ign.jpg" alt="">
+            </p>
+            <div class="section-infos">
+                <h3>Lacs d'Ayous</h3>
+                <ul class="liste-infos">
+                    <li>5h15 de route depuis Montpellier</li>
+                    <li>6h30 de marche pour faire la boucle</li>
+                    <li>La boucle commence à 1400m et culmine à presque 2100m d'altitude</li>
+                </ul>
+                <a class="lien-visorando" href="https://www.visorando.fr/randonnee-lacs-d-ayous/">Liens visorando</a>
+            </div>
+        </div>
+        <hr class="separateur"> <!-- SÉPARATEUR -->
+        <div class="rando-unit sectionayous"><!-- ARTAX -->
+            <p class="section-map">
+                <input type="radio" name="artax" id="artaxsat-ign" checked>
+                <label for="artaxsat-ign">Satellite IGN</label>
+                <input type="radio" name="artax" id="artaxosm">
+                <label for="artaxosm">OSM</label>
+                <input type="radio" name="artax" id="artaxosm-rando">
+                <label for="artaxosm-rando">OSM rando</label><br>
+
+                <img class="map map-osm" src="assets/img/artax/osm.jpg" alt="">
+                <img class="map map-osm-rando" src="assets/img/artax/osm-rando.jpg" alt="">
+                <img class="map map-sat-ign" src="assets/img/artax/sat-ign.jpg" alt="">
+            </p>
+            <div class="section-infos">
+                <h3>Étangs d'Artax</h3>
+                <ul class="liste-infos">
+                    <li>3h et quelques de route depuis Montpellier</li>
+                    <li>5h30 de marche pour faire la boucle</li>
+                    <li>La boucle commence à 900m et culmine à un peu plus de 1800m d'altitude</li>
+                </ul>
+                <a class="lien-visorando" href="https://www.visorando.fr/randonnee-boucle-etang-d-artax/">Liens visorando</a>
+            </div>
+        </div>
     </section>
 </div></body>
 </html>
