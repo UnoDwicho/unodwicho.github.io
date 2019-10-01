@@ -284,3 +284,9 @@ body{
 }
 .sauce > div:nth-child(odd){background-color: #bfbf00}
 .sauce > div:nth-child(even){background-color: #bf0000}
+
+@media (max-width:700px){
+    body{
+        transform: scale(0.7);
+    }
+}
