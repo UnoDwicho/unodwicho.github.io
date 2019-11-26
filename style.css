@@ -1,0 +1,32 @@
+:root{
+    --colorlight: #e5e2df;
+    --colordark: #26282b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--colordark);
+    font-family: Raleway;
+}
+h1, h2{font-family: Calistoga;}
+body{
+    min-height: 100vh;
+    padding: 100px 20px;
+    background-color: var(--colorlight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteneur-table{
+    margin-top: 50px;
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 20px;
+    align-items: center;
+}
+.conteneur-table > *{}
+.names{grid-column-start: 1; justify-self: end;}
+.apikeys{grid-column-start: 2;}
