@@ -14,11 +14,16 @@
     font-family: "Source Sans Pro";
     line-height: 1.5em;
 }
+a:link{color:#1976D2}
+a:visited{color:#1976D2}
+a:hover{color:#64B5F6}
+a:active{color:#0D47A1}
 h1{
     font-family: "Nonplus-Black";
     font-size: 10vw;
     text-align: center;
     margin-bottom: 75px;
+    color: #FFAB00;
 }
 body{
     min-height: 100vh;
