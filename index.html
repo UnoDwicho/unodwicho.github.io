@@ -5,64 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UnoDwicho | Design</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Typographie</h1>
-<div class="wrapper">
-    <section class="sections">
-        <h2>Technique et bonnes pratiques</h2>
-        <ul>
-            <li><a href="https://practicaltypography.com/">Practical Typography</a> (la section <span class="italique">Summary of key rules</span> en est un bon résumé global)</li>
-            <li><a href="https://betterwebtype.com/blog/">Better Web Type</a> — ne pas oublier les mini-jeux 
-                <ul>
-                    <li><a href="https://betterwebtype.com/web-typography-quiz/">Typography quiz</a></li>
-                    <li><a href="https://betterwebtype.com/font-memory-game/">Font Memory Game</a> (non supporté sur mobile)</li>
-                    <li><a href="https://betterwebtype.com/triangle/">The Equilateral Triangle of a Perfect Paragraph</a></li>
-                </ul>
-            </li>
-            <li><a href="https://www.invisionapp.com/inside-design/typography-tips/">Typography tips for a more comfortable read</a></li>
-            <li><a href="https://www.pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography?mc_cid=380700498a&mc_eid=2a030ddedc">A Five-Minute Guide to Better Typography</a></li>
-            <li><a href="https://uxdesign.cc/a-better-way-to-create-typography-design-systems-689c851dc616">A better way to create typography design systems</a></li>
-        </ul>
+<!-- SECTION HEADER -->
+<header class="wrapper soussections">
+    <h1>Code workflow</h1>
+    <h2>Petits trucs à ne pas oublier</h2>
+    <p>
+        Bonnes pratiques, conseils, liens utiles,... Ceci est une petite collection de choses auxquelles vous devez penser lorsque vous travaillez sur des sites. Ce sera concis mais vous trouverez des liens complémentaires pour certaines notions.
+    </p>
+    <hr>
+</header>
+
+<!-- SECTION MAIN -->
+<main class="main wrapper">
+    <!-- SECTION HTML -->
+    <section>
+        <h3>Le début du workflow / le HTML</h3>
+        <!-- ORGANISATION DES DOSSIERS -->
+        <div class="soussections">
+            <h4>Soignez l'organisation de vos dossiers</h4>
+            <p>
+                Avant même de commencer à coder, préparez l'arborescence de votre dossier de travail et anticipez les éléments dont vous pourriez éventuellement avoir besoin. Ne commencez pas un projet en foutant tout en vrac dans le même dossier en vous disant que ce n'est pas grave car vous n'avez qu'une feuille de style et 2 images.<br>
+                Soyez organisé dès le départ et vous vous éviterez les prises de tête du genre réorganisation de vos dossiers en milieu de projet et mises à jour de tous les liens et chemins dans le code.
+            </p>
+            <img src="assets/img/organisation-dossiers.jpg" alt="screenshot de l'organisation des dossiers d'un site web">
+            <p class="attention">
+                Évitez d'utiliser majuscules, accents et espaces dans le nom de vos dossiers et fichiers.
+            </p>
+        </div>
+        <!-- META -->
+        <div class="soussections">
+            <h4>N'oubliez pas ces éléments dans le head de vos pages</h4>
+            <p>
+                Le head de vos page contient des informations cruciales sur les pages de vos sites. Outre les liens vers vos feuilles de CSS et autres ressources, n'oubliez pas ces éléments :
+            </p>
+            <ul>
+                <li>la meta qui indique l'encodage, l'ensemble de caractères qui est utilisé</li>
+                <li>la meta qui indique le comportement de zoom sur votre page</li>
+                <li>la balise title</li>
+                <li>la meta description.</li>
+            </ul>
+            <p class="attention">
+                Lien complémentaire : <a href="https://htmlhead.dev/">https://htmlhead.dev/</a>
+            </p>
+        </div>
+        <!-- METHODOLOGIE -->
+        <div class="soussections">
+            <h4>Méthodologie</h4>
+            <p>
+                Voici des choses importantes à ne pas oublier lorsque vous codez. Elles vous permettront d'accélérer votre workflow et de bosser de façon propre.
+            </p>
+            <ul>
+                <li>Emmet. Pensez à l'installer si vous arrivez sur un nouvel environnement et jetez un oeil à la documentation, vous y trouverez probablement des raccourcis très utiles.</li>
+                <li>Ne faites pas l'impasse sur vos zonings et/ou wireframes. Ils vous aideront à visualiser la structure du HTML avant même de commencer à coder.</li>
+                <li>Portez une attention particulière au formatage de votre code. L'indentation, les commentaires, les sauts de ligne sont des détails qui peuvent grandement améliorer la lisibilité de votre code.</li>
+                <li>Adoptez des conventions de nommage pour vos class. Grâce à ça, avec la pratique vous gagnerez énormément en efficacité et compréhension de votre propre code.</li>
+            </ul>
+            <p class="attention">
+                Liens complémentaires :
+            </p>
+            <ul>
+                <li><a href="https://docs.emmet.io/">Documentation d'Emmet</a></li>
+                <li><a href="https://medium.com/@KBizien/architecture-css-avec-itcss-inuitcss-6b4271cb1042">Méthodes CSS</a> (vous pouvez sauter les 2 ou 3 premières sections de l'articles)</li>
+            </ul>
+        </div>
+        <!-- BONNES PRATIQUES -->
+        <div class="soussections">
+            <h4>Bonnes pratiques</h4>
+            <p>
+                Encore quelques notions très importantes lorsque vous vous occupez de votre contenu.
+            </p>
+            <ul>
+                <li>Compressez vos images.</li>
+                <li>Utilisez des balises sémantiques autant pour la SEO que l'accessibilité.</li>
+                <li>Renseignez les attributs alt pour les images.</li>
+            </ul>
+            <p class="attention">
+                Lien complémentaire : <a href="https://kraken.io/web-interface">Kraken, compresseur d'image en ligne</a>
+            </p>
+        </div>
+        <hr>
+    </section><!-- fin de section concernant le html -->
+
+    <!-- SECTION CSS -->
+    <section>
+        <h3>À l'étape du CSS</h3>
+        <!-- Structure et méthodo -->
+        <div class="soussections">
+            <h4>Structure et méthodologie</h4>
+            <p>
+                Quelle que soit votre façon de coder et formater votre code, veillez à rester cohérent à travers tout le document. Cette régularité vous permettra d'éviter de perdre du temps à relire votre code et chercher des informations lorsque vous en avez besoin.
+            </p>
+            <p>
+                Quelques points clés :
+            </p>
+            <ul>
+                <li>mettez des commentaires pour vous repérer facilement</li>
+                <li>listez les propriétés dans un ordre qui a du sens pour vous toujours dans un but de vous repérer plus rapidement dans votre code</li>
+                <li>structurez votre CSS proprement <i>(voir schéma ci-dessous)</i></li>
+            </ul>
+            <img src="assets/img/structure-css.png" alt="schéma de la structure de mon CSS">
+            <p class="attention">
+                Lien complémentaire : <a href="https://wattenberger.com/blog/css-cascade">The CSS Cascade</a>, un rappel sur la notion de spécificité en CSS.
+            </p>
+        </div>
     </section>
-    <section class="sections">
-        <h2>Inspiration</h2>
-        <ul>
-            <li><a href="https://fontsinuse.com/">Fonts in use</a></li>
-            <li><a href="https://www.typewolf.com/">Typewolf</a></li>
-        </ul>
+
+    <!-- SECTION MISE EN LIGNE -->
+    <section>
+        <h3>La mise en ligne</h3>
+        <div class="soussections">
+            <h4>Quelques choses auxquelles vous devez penser juste avant ou après la mise en ligne de votre projet</h4>
+            <ul>
+                <li>Que ce soit un site codé en dur ou un CMS, une fois le site hébergé vous devez vous occuper de la redirection automatique vers la version sécurisée du site. Nous faisons ça avec un fichier .htaccess à mettre à la racine du site ou alors avec un plugin tel que Really Simple SSL si vous utilisez Wordpress.<br>
+                Évidemment cette étape se fait seulement une fois le site mis en ligne car vous devez posséder un certificat SSL, certificat qui est en général inclus dans l'hébergement.</li>
+                <li>Si vous mettez en ligne un CMS vous devez penser à mettre en place des mesures de sécurité. On a notamment vu en cours les extensions <i>All In One WP Security & Firewall</i> et <i>WP Hide & Security Enhancer</i>.<br>
+                N'utilisez qu'une seule de ces extensions car beaucoup de leurs fonctions se recoupent et si vous les configurez en même temps il peut y avoir des conflits.<br>
+                Attention, ces procédures se font également après la mise en ligne du site.</li>
+                <li></li>
+            </ul>
+        </div>
     </section>
-    <section class="sections">
-        <h2>Ressources gratuites</h2>
-        <ul>
-            <li><a href="https://www.velvetyne.fr">Velvetyne</a> — une excellente fonderie française qui propose avec des familles de polices décalées et surtout libres de droits</li>
-            <li><a href="https://www.theleagueofmoveabletype.com/">The League of Moveable Type</a> — une fonderie open-source de très bonne qualité. Pour les plus intéressés, leur newsletter est excellente et ils ont aussi un podcast.</li>
-            <li><a href="https://www.fontsquirrel.com/">Fontsquirrel</a> — un agrégateur de polices gratuites qui propose un générateur de @font-face avec export en format .woff</li>
-            <li><a href="https://alternatype.net">Alternatype</a> — encore un agrégateur de polices. Celui permet de trouver des alternatives libres à des polices commerciales.</li>
-            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-        </ul>
-    </section>
-    <section class="sections">
-        <h2>Fonderies</h2>
-        <ul>
-            <li><a href="https://www.futurefonts.xyz/">Future Fonts</a> — permets d'acheter des licences pour des polices encore en cours de réalisation. Ça permet de soutenir les artistes et en même temps d'acheter les polices à de meilleurs tarifs que lors de leur future sortie. De très bons créateurs derrière le projet, on peut y aller les yeux fermés.</li>
-            <li><a href="https://www.colophon-foundry.org/">Colophon Foundry</a></li>
-            <li><a href="https://www.fontfabric.com/">Fontfabric</a></li>
-            <li><a href="https://ohnotype.co/">OHNO</a> — le gars qui est derrière les polices créées pour Vulfpeck pour les connaisseurs et également le co-fondateur de Future Fonts.</li>
-        </ul>
-    </section>
-    <section class="sections">
-        <h2>Mention spéciale — les polices variables</h2>
-        <h3>
-           Les polices variables vont pas tarder à se démocratiser donc c'est un sujet à surveiller de près.
-        </h3>
-        <ul>
-            <li><a href="https://v-fonts.com/">Variable Fonts</a> — un agrégateur de polices variables qui permet de les tester.</li>
-            <li><a href="https://medium.com/clear-left-thinking/how-to-use-variable-fonts-in-the-real-world-e6d73065a604">How to use variable fonts in the real world</a> — un aperçu de l'utilisation en production de police variable.</li>
-        </ul>
-    </section>
+</main>
+
+
 </div>
 </body>
 </html>

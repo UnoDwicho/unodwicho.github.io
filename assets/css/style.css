@@ -1,0 +1,68 @@
+*{
+    font-family: "Source Sans Pro";
+    line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6{font-family: Montserrat; text-transform: uppercase;}
+h4{margin-bottom: 0;}
+img{max-width: 100%;}
+
+.wrapper{
+    max-width: 900px;
+    margin: auto;
+}
+
+.soussections{
+    margin-bottom: 4rem;
+}
+
+.attention{font-style: italic;}
+.attention::before{
+    content: "";
+    display: inline-block;
+    margin-right: .5em;
+    border-left: .5em  solid transparent;
+    border-right: .5em  solid transparent;
+    border-bottom: 1em solid brown;
+}
+
+.main{
+    padding: 1rem; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- STRUCTURE DE MON CSS ----- */
+/*
+|-----
+|   déclaration des @font-face
+|-----
+|   le :root dans lequel je définis entre autres les variables
+|-----
+|   l'élément global *
+|       pour rappel, ce sélecteur cible TOUS les éléments de la page
+|-----
+|   les class globales telles que le .wrapper et qui sont utilisées
+|   plusieurs fois à travers tout le site
+|-----
+|   segmentation du CSS sections par sections et séparées par des
+|   commentaires bien visibles
+|-----
+|   déclaration des points de ruptures avec @media
+|       à l'intérieur de chaque point de rupture je segmente également
+|       le code section par section en pensant à mettre des commentaires
+|       pour me rappeler sur quelle partie du site ce code va être appliqué
+|-----
+*/
