@@ -50,21 +50,10 @@ figcaption{font-size: .8em; font-style: italic;}
 }
 
 .footer{margin-bottom: 100px;}
-blockquote p {
+.conteneur-quote{
     padding: 15px;
     background: #eee;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.xoxo, .footer blockquote footer{text-align: right;}
+.footer blockquote footer{line-height: 3em;}
