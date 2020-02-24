@@ -1,9 +1,21 @@
+@font-face{
+    font-family: 'Bulky';
+    src: url("../fonts/Bulky.otf") format("opentype");
+}
 *{
     font-family: 'Open Sans';
     line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6{font-family: 'Montserrat'; text-transform: uppercase;}
+h1{
+    font-family: 'Bulky';
+    text-align: center;
+    font-size: 6em;
+    color: gold;
+    text-shadow: 5px 5px 0 black;
+}
+h3{background-color: gold; padding: 10px;}
 h4{margin-bottom: 0;}
 img{max-width: 100%;}
 /* figure{margin-bottom: 0.8em;} */
