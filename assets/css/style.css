@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Bulky';
-    src: url("../fonts/Bulky.otf") format("opentype");
+    src: url("/assets/fonts/Bulky.otf") format("opentype");
 }
 *{
     font-family: 'Open Sans';
