@@ -15,6 +15,9 @@ h1{
     color: gold;
     text-shadow: 5px 5px 0 black;
 }
+@media (max-width:500px){
+    h1{font-size:4em;
+}
 h3{background-color: gold; padding: 10px;}
 h4{margin-bottom: 0;}
 img{max-width: 100%;}
